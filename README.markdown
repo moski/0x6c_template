@@ -5,7 +5,7 @@ Install
 --------
 
    sudo gem install toto
-   git clone xxxxxx
+   git@github.com:moski/0x6c_template.git
    cd 0x6c_template
    thin start -R config.ru 
    
