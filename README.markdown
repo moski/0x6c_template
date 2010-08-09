@@ -4,7 +4,7 @@ Template Engine used in 0x6c.com
 Install
 --------
      sudo gem install toto
-     git@github.com:moski/0x6c_template.git
+     git clone git@github.com:moski/0x6c_template.git
      cd 0x6c_template
      thin start -R config.ru 
    
