@@ -1,0 +1,341 @@
+body{
+  background-color:#aaaaaa;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-shadow: rgba(0,0,0,0.01) 0 0 1px;
+  -webkit-text-stroke: 1px transparent;
+  -moz-text-stroke: 1px transparent;
+  min-width: 920px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+a:link, a:visited {
+	color: #c4509d;
+	text-decoration: none;
+}
+a:hover {
+	color: #509cc4;
+}
+
+#page {
+	position: relative;
+	width: 876px;
+	margin:0px auto;
+	padding:0px;
+}
+
+/*  FollowMe Section **/
+#page #followMe {
+	position: absolute;
+	top: -30px;
+	right: 0px;
+	width:270px;
+	height: 37px;
+	padding: 15px;
+	background: url(/images/followMe.png);
+}
+#page #followMe ul {
+	margin-top: 3px;
+	-webkit-transform: rotate(-2deg);	
+	-moz-transform: rotate(-2deg);	
+}
+#page #followMe li {
+	display: block;
+	float: left;
+	list-style-type: none;
+}
+#page #followMe li a:link, #page #followMe li a:visited {
+	display: block;
+	float: left;
+	margin: 0px 10px 0px 0px;
+	padding: 0px 0px 0px 36px;
+	height: 34px;
+	color: #fff;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+#page #followMe li a:hover {
+	color: rgba(0,0,0,.6);
+}
+#page #followMe li a.twitter { background-image:url("/images/twitter.png"); }
+#page #followMe li a.facebook { background-image:url("/images/facebook.png"); }
+#page #followMe li a.rss { background-image:url("/images/rss.png"); }
+/** END FollowMe Section **/
+
+/** HEADER **/
+#page #header h1 a {
+	display: block;
+	
+	width: 210px;
+	height: 71px;
+	background:url("/images/logo.png") repeat scroll 0 0 transparent;
+}
+/** END HEADER */
+#content {
+	position: relative;
+	margin: 0px 0px 40px 0px;
+	min-height: 1000px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background:url("/images/sideBarBack.png") repeat-y scroll left center #819399;
+}
+#content .bottom {
+	clear: both;
+}
+
+
+/** Posts */
+#posts {
+	float: left;
+	width: 515px;
+	padding: 0px 30px;
+}
+
+#posts .post .postComments a:link, #posts .post .postComments a:visited {
+	display: block;
+	height: 15px;
+	width: 200px;
+	padding: 0px 4px 7px 20px;
+	margin-top: 8px;
+	color: #06486a;
+	text-decoration: none;	
+	font-size: 14px;
+	background: #06486a url(/images/commentsBack.png) -7px center;
+}
+
+#posts .post .postComments a:hover {
+	font-size: 14px;
+	height: 15px;
+	color: #ad498b;
+	background-color: #ad498b;
+}
+
+#posts .post {
+	position: relative;
+	margin: 0px 0px 50px 0;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+#posts .post h2, 
+#posts .post h2 a {
+	font-family: 'Yanone Kaffeesatz', Georgia, serif;
+	color: #a23e80;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 38px;
+	margin-bottom: -.1em;
+	text-decoration: none;
+}
+#posts .post .entry h2, #posts .post h3 {
+	font-family: 'Yanone Kaffeesatz', Georgia, serif;
+	color: #06486a;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	margin: 1em 0 .5em 0;
+}
+#posts .post h3 a:link, #posts .post h3 a:visited {
+	color: #06486a;	
+}
+#posts .post p {
+	margin: 1.2em 3em 1.2em 0;
+	color: #26343b;
+}
+#posts .post img {
+	max-width: 530px;
+	margin: 1.1em 0 1.1em 0;
+	-webkit-box-shadow: 0px 2px 10px rgba(0,0,0,.4);
+	-moz-box-shadow: 0px 2px 10px rgba(0,0,0,.4);
+	box-shadow: 0px 2px 10px rgba(0,0,0,.4);
+}
+
+#posts .post .postmetadata {
+	display: block;
+	margin: -2px 0px -.3em 0px;
+	height: 18px;
+	font-family: 'Yanone Kaffeesatz', Georgia, serif;
+	color: #ad498b;
+	padding: 1px 4px 7px 20px;
+	font-size: 16px;
+	
+	max-width: 400px;
+}
+#posts .post .postmetadata a:link, #posts .post .postmetadata a:visited {
+	font-size: 18px;
+	font-family: 'Yanone Kaffeesatz', Georgia, serif;
+	color: #ad498b;
+}
+#posts .post .postmetadata a:hover {
+	text-decoration: underline;
+}
+
+
+
+#posts .post .date {
+	position: absolute;
+	top: 5px;
+	left: -95px;
+	width: 65px;
+	background: #ad498b;
+	color: #fff;
+	padding: 0px;
+	-webkit-box-shadow: 0px 2px 10px rgba(0,0,0,.4);
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-box-shadow: 0px 2px 10px rgba(0,0,0,.4);
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+}
+#posts .post .date div {
+	padding: 3px 8px 5px 9px;
+	margin-right: 4px;
+	border-right: 1px dashed white;
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+}
+#posts .post .date span {
+	display: block;
+	-outline: 1px solid red;
+}
+#posts .post .date .dateDay {
+	font-size: 37px;
+	letter-spacing: -2px;
+	margin-bottom: 3px;
+}
+#posts .post .date .dateMonth {
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: -1px;
+}
+#posts .post .date .dateYear {
+	font-size: 12px;
+	color: #deb8d1;
+	line-height: 16px;
+}
+#posts .post .date:after {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 10px;
+	height: 90px;
+	content: ".";
+	background: #fff;	
+}
+#posts .post .postFeedback {
+	border-top: 1px dotted #cedfda;
+	padding: 5px 0px;
+}
+#posts .post .postFeedback .postShare {
+	float: right;
+}
+
+
+/** Sidebar */
+#content #sidebar {
+	float: right;
+	width: 300px;
+	font-size: 13px;
+	line-height: 18px;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-radius: 6px;
+}
+
+#content #sidebar a:link , #content #sidebar a:visited{
+  color: white;
+	text-decoration: none;
+}
+
+#content #sidebar .sidebarSection {
+	position: relative;
+	padding: 20px 25px 20px 20px;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+#content #sidebar h3 {
+	font-family: 'Yanone Kaffeesatz', Georgia, serif;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 23px;
+	margin-bottom: 8px;
+}
+
+/** Sidebar About */
+#content #sidebar .sectionAbout {}
+
+#sidebar .sectionAbout .aboutPhoto, #sidebar .sectionAbout .aboutPhotoBack {
+	position: absolute;
+	top: -20px;
+	right: 15px;
+	width: 225px;
+	height: 225px;
+	background: #fff;
+	border: 6px solid #fff;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	-webkit-transform: rotate(4deg);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	-moz-transform: rotate(4deg);
+}
+
+#sidebar .sectionAbout .aboutPhotoBack {
+	top: 10px;
+	right: 70px;
+	width: 200px;
+	height: 200px;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+}
+#sidebar .sectionAbout .aboutClip {
+	position: absolute;
+	top: 20px;
+	right: -9px;
+	width: 62px;
+	height: 87px;
+	background: url(/images/aboutClip.png);	
+}
+#sidebar .moreLink {
+	color: #a23e80;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#sidebar .sectionAbout .aboutGithub:link, #sidebar .sectionAbout .aboutGithub:visited {
+	position: relative;
+	display: block;
+	margin: 20px 0px 5px 0px;
+	padding: 10px 10px 13px 60px;
+	font-family: 'Yanone Kaffeesatz', Georgia, serif;
+	text-decoration: none;
+	color: #06486a;
+	font-size: 20px;
+	line-height: 15px;
+	border: 1px solid #a2c4c2;
+	background: #AAAAAA;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+	-moz-box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+}
+
+#sidebar .sectionAbout .aboutGithub .aboutGit {
+	position: absolute;
+	display: block;
+	top: -10px;
+	left: -10px;
+	width: 63px;
+	height: 64px;
+	background: url(/images/github.png);
+}
+
+/** Navigation */
+body .navigation {
+	margin-bottom: 20px;
+}
+
+

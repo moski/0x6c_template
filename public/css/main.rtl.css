@@ -1,0 +1,73 @@
+body{ direction:rtl; }
+
+#page #followMe {
+	right: auto;
+	left:0px;
+}
+
+#page #followMe li{ float: right; }
+
+#page #followMe li a:link, #page #followMe li a:visited {
+	float: right;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 36px 0px 0px;
+}
+#page #header h1 a {text-indent:auto;}
+
+#content { background:url("/images/sideBarBack.png") repeat-y scroll right center #819399; }
+
+#posts { float:right; text-align:right;}
+
+#posts .post .postComments a:link, #posts .post .postComments a:visited {  
+  padding: 0px 30px 7px 4px; 
+  background: #06486a url(/images/commentsBackRTL.png) 97%  center;
+}
+
+#posts .post .postmetadata { padding: 1px 20px 7px 4px; }
+
+#posts .post p {
+	margin: 1.2em 0em 1.2em 3em;
+}
+
+
+#posts .post .date {
+	left: auto;
+	right:-95px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-bottomleft: 0px;
+}
+
+#posts .post .date div {
+	padding: 3px 9px 5px 8px;
+	margin-right: auto;
+	margin-left: 4px;
+	border-right: 0px dashed white;
+	border-left: 1px dashed white;
+}
+#posts .post .date:after {
+  right: auto; 
+  left: -10px;
+}
+
+#posts .post .postFeedback .postShare {float:left;}
+
+#content #sidebar {
+	float: left;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+}
+

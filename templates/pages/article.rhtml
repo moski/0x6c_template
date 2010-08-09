@@ -1,0 +1,39 @@
+<div id="content" class="row" >
+    <div id="posts">
+        <div class="post">
+            <h2>
+                <a title="<%= title %>" rel="bookmark" href=""><%= title %></a>
+            </h2>
+            <span class="postComments"><a title="Comment on <%=  title %>" href="#comments">6 Comments</a></span>
+            <div class="date">
+                <div>
+                    <% article_date = Date.parse(date) %>
+                    <span class="dateMonth"><%= article_date.strftime("%b") %></span>
+                    <span class="dateDay"><%= article_date.strftime("%d")  %></span>
+                    <span class="dateYear"><%= article_date.strftime("%Y")  %></span>
+      			</div>
+      		</div>
+            <div class="entry">
+      		    <%=  body %>
+      		</div>
+      		<div class="postFeedback">
+      		    <div class="postShare">
+      		        
+      		        <iframe scrolling="no" frameborder="0" allowtransparency="true" style="border: medium none; overflow: hidden; width: 80px; height: 20px; background: none repeat scroll 0% 0% rgb(255, 255, 255);" src="http://www.facebook.com/plugins/like.php?href=<%= path  %>&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21"></iframe>
+      			</div>
+      		</div>
+      	</div>
+    </div>
+  <div id="sidebar" >
+      <div class="sidebarSection sectionAbout">
+          <h3>About</h3>
+          
+          <p>Anything u want.</p>
+          <a class="moreLink" href="/about/">find out more <span class="arrow">→</span></a>
+          <a class="aboutGithub" href="">
+              <span class="aboutGit"></span>Check out my github <span class="arrow">→</span>
+          </a>
+      </div>
+  </div>  
+  <div class="bottom"></div>
+</div><!-- end #content -->

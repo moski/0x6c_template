@@ -1,0 +1,48 @@
+<div id="content" class="row" >
+    <div id="posts">
+        <% for article in articles[0...5] %>
+        <div class="post<%= ' rtl' if article.rtl %>">
+            <h2>
+                <a title="<%= article.title %>" rel="bookmark" href="<%= article.path %>"><%= article.title %></a>
+            </h2>
+            <span class="postComments"><a title="Comment on <%=  article.title %>" href="<%= article.path %>">6 Comments</a></span>
+            <div class="date">
+                <div>
+                    <% date = Date.parse(article.date) %>
+                    <span class="dateMonth"><%= date.strftime("%b") %></span>
+                    <span class="dateDay"><%= date.strftime("%d")  %></span>
+                    <span class="dateYear"><%= date.strftime("%Y")  %></span>
+      			</div>
+      		</div>
+            <div class="entry">
+      		    <%= article.summary %>
+      		</div>
+      		<div class="postFeedback">
+      		    <div class="postShare">
+      		       <iframe scrolling="no" frameborder="0" allowtransparency="true" style="border: medium none; overflow: hidden; width: 80px; height: 20px; background: none repeat scroll 0% 0% rgb(255, 255, 255);" src="http://www.facebook.com/plugins/like.php?href=<%= article.path  %>&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21"></iframe>
+      			</div>
+      			<p class="postmetadata"><a href="<%= article.path %>">Read More </p>
+      		</div>
+      	</div>
+        <% end %>
+    
+        <div class="navigation">
+            <div class="alignleft"><a href="#">« Older Entries</a></div>
+        	<div class="alignright"></div>
+        </div>
+    </div>
+  <div id="sidebar" >
+      
+      <div class="sidebarSection sectionAbout">
+          <h3>About</h3>
+          <p> Anything u want </p>
+          <a class="moreLink" href="/about/">find out more <span class="arrow">→</span></a>
+          
+          
+          <a class="aboutGithub" href="">
+              <span class="aboutGit"></span>Check out my github <span class="arrow">→</span>
+          </a>
+      </div>
+  </div>  
+  <div class="bottom"></div>
+</div><!-- end #content -->
